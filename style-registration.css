@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: copperplate;
+    src: url(assets/fonts/CopperplateGothicBold.ttf);
+}
+
+@font-face {
+    font-family: orator;
+    src: url(assets/fonts/OratorStd.otf);
+}
+
+
+
+.logo img{
+    width: 190px;
+}
+
+.reg img{
+    width:180px;
+}
+
+.header{
+    background-color: #040001;
+    font-family: copperplate;
+    height: 95px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+    z-index: 1;
+}
+
+.nav-cont{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-cont ul{
+    list-style: none;
+    z-index: 1;
+}
+
+.nav-cont ul li{
+    padding: 10px 25px;
+    position: relative;
+}
+
+.nav-cont ul li a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-cont ul li a:hover{
+    color: #b43318;
+}
+
+.dropdown{
+    display: none;
+}
+
+.nav-cont ul li:hover .dropdown{
+    display: block;
+    border-style: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #2c2c2c;
+}
+
+.nav-cont ul li:hover .dropdown ul{
+    display: block;
+    padding: 0 7px;
+    margin: 7px;
+}
+
+.nav-cont ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+.reg{
+    display: block;
+    font-family: orator;
+    font-style: italic;
+    font-weight: bold;
+    outline: none;
+    border: solid 2px #b43318;
+    font-size: 16px;
+    line-height: 1px;
+    padding: 16px 30px;
+    border-radius: 7px;
+    background: none;
+    color: #b43318;
+    cursor: pointer;
+}
+
+.item a{
+    text-decoration: none;
+}
+
+.reg:hover{
+    color: white;
+}
+
+.fade{
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(#000000,rgba(0, 0, 0, 0));
+}
+
+.bg-cont{
+    max-height: 900px;
+    height: fit-content;
+    background: url('assets/banner-6.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.content-cont{
+    padding: 60px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.reg-cont{
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.767);
+    padding: 25px 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.reg-title{
+    font-family: copperplate;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+.underline{
+    padding: 0;
+    margin: 0;
+    background-color: #b43318;
+    width: 60px;
+    height: 4px;
+    position: absolute;
+}
+
+.reg-cont form .reg-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: orator;
+    font-weight: bold;
+    color: white;
+}
+
+form .reg-form .input-box{
+    width: calc(100%/2 - 20px);
+    margin: 20px 10px;
+}
+
+.reg-form .input-box .details{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.reg-form .input-box input{
+    border: solid 1.5px #b43318;
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(26, 26, 26);
+}
+
+.agree-cont{
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.submit-cont input{
+    background-color: #b43318;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    width: 600px;
+    height: 35px;
+    margin: 20px;
+    font-family: orator;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.submit-cont input:hover{
+    border: solid 3px #b43318;
+    background: none;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(24, 24, 24);
+    height: 50px;
+    width: 100%;
+    font-family: "Open Sans";
+    padding:0 30px;
+    color: #ffff;
+    left: 0;
+    bottom: 0;
+
+}
+
+.footercontent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.footercontent h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+
+
+.media{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.media li{
+    margin: 0 10px;
+}
+
+
+.media a{
+    text-decoration: none;
+    color: white;
+}
+
+.media a i{
+    font-size:20px;
+    transition: color .4s ease;
+}
+
+.media a:hover i{
+    color: rgb(114, 22, 22);
+}
+
+.footerbottom{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footerbottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
